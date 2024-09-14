@@ -16,12 +16,31 @@ Aqwa Reader is a Python-based tool for reading and processing AQWA files into on
   - `numpy`
   - `matplotlib`
   - `zipfile`
-  
+
+## Usage
+
 You can install the dependencies using:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/aqwa-reader.git
+```
+2. Navigate to project directory:
+```bash
+cd aqwa-reader
+```
+
+3. Run the notebook:
+Open the notebook (Aqwa_Reader.ipynb) in Jupyter Lab or Jupyter Notebook:
+```bash
+jupyter notebook Aqwa_Reader.ipynb
+```
+
 
 ## Project Structure:
 ```bash
@@ -31,3 +50,5 @@ aqwa-reader/
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
 ```
+
+
