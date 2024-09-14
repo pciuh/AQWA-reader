@@ -45,7 +45,8 @@ jupyter notebook Aqwa_Reader.ipynb
 ## Project Structure:
 ```bash
 aqwa-reader/
-│
+├── input/                  # Directory including AQWA zipped file named as in variable fnm
+├── pkl/                    # Directory to store output pickle file
 ├── Aqwa_Reader.ipynb       # Main Jupyter notebook with code and examples
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
