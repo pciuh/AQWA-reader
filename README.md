@@ -21,7 +21,7 @@ You can install the dependencies using:
 
 ```bash
 pip install -r requirements.txt
-`
+```
 
 ## Project Structure:
 ```bash
@@ -30,4 +30,4 @@ aqwa-reader/
 ├── Aqwa_Reader.ipynb       # Main Jupyter notebook with code and examples
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
-`
+```
