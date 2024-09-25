@@ -32,11 +32,8 @@ def plo_lin(dcon,ind):
         fig.suptitle(TIT)
         for i in range(6):
             for j in range(6):
-                arr = dcon[cn][im,iv,ib,:,i,j]
-                #print(cn,dcon[cn].shape)
-                #print(dcon['f1e'].shape)
-                om = dcon['f1e'][im,iv,ib,:,-1]
-                #om = dcon['fa'][im,iv,ib,:,0,0,:]
+                arr = np.real(dcon[cn][im,iv,ib,:,i,j])
+                om = np.real(dcon['f1e'][im,iv,ib,:,-1])
                 ax[i,j].set_title(r'$'+cn+'_{%i%i}$'%(i+1,j+1))
                 ax[i,j].plot(om,arr,lw=2,c='k')
                 ax[i,j].set_xscale('log')
@@ -56,8 +53,8 @@ def plo_map(dcon,ind,cMap):
         fig.suptitle(TIT)
         for i in range(6):
             for j in range(6):
-                arr = dcon[cn][im,iv,:,:,i,j]
-                om = dcon['f1e'][im,iv,:,:,-1]
+                arr = np.real(dcon[cn][im,iv,:,:,i,j])
+                om = np.real(dcon['f1e'][im,iv,:,:,-1])
                 bg = np.repeat(np.array(dcon['bet']),om.shape[1]).reshape(-1,om.shape[1])
                 ax[i,j].set_title(r'$'+cn+'_{%i%i}$'%(i+1,j+1))
                 ax[i,j].contourf(om,bg,arr,cmap=cMap)
