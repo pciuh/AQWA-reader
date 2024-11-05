@@ -28,7 +28,7 @@ pip install -r requirements.txt
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/aqwa-reader.git
+git clone https://github.com/pciuh/aqwa-reader.git
 ```
 2. Navigate to project directory:
 ```bash

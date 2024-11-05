@@ -20,7 +20,7 @@ from zipfile import ZipFile as zips
 
 import matplotlib.pyplot as plt
 
-def plo_lin(dcon,ind):
+def plo_lin(dcon,ind:int):
     im,iv,ib = ind
 
     cNam = ['a','b']
